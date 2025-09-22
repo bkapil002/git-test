@@ -4,7 +4,7 @@ function App() {
 
   return (
     <>
-      <form method="get" action="https://samzra.onrender.com/signin">
+      <form method="get" action="https://samzra.onrender.com">
         <input
           type="hidden"
           name="email"
