@@ -1,15 +1,16 @@
 function App() {
   const email = "prem@brandingrain.com";
-  const encodedEmail = btoa(email); // converts to Base64
+  const encodedEmail = btoa(email); // Base64
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    window.location.href = `https://samzra.onrender.com/signin/${encodedEmail}`;
+  };
 
   return (
     <>
-      <form method="get" action="https://samzra.onrender.com/signin">
-        <input
-          type="hidden"
-          name="email"
-          value={encodedEmail} // Base64 value
-        />
+      <form onSubmit={handleSubmit}>
+        <input type="hidden" value={encodedEmail} />
         <input type="submit" value="Submit" />
       </form>
     </>
