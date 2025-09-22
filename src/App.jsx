@@ -1,19 +1,19 @@
-
 function App() {
-
+  const email = "prem@brandingrain.com";
+  const encodedEmail = btoa(email); // converts to Base64
 
   return (
     <>
-     <form method="get" action="https://samzra.onrender.com/signin">
-        <input 
-          id="fname" 
-          defaultValue="cHJlbUBicmFuZGluZ3JhaW4uY29t" 
+      <form method="get" action="https://samzra.onrender.com/signin">
+        <input
+          type="hidden"
+          name="email"
+          value={encodedEmail} // Base64 value
         />
-        <br />
         <input type="submit" value="Submit" />
       </form>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
