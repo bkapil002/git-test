@@ -35,11 +35,7 @@ export default function RegisterForm() {
           <input type="email" name="email" required />
         </div>
 
-        <div>
-          <label>Password:</label>
-          <br />
-          <input type="password" name="password" required />
-        </div>
+      
 
         <br />
         <button type="submit">Register</button>
@@ -61,9 +57,7 @@ export default function RegisterForm() {
           <p>
             <b>Email:</b> {formData.email}
           </p>
-          <p>
-            <b>Password:</b> {formData.password}
-          </p>
+    
         </div>
       )}
     </div>
