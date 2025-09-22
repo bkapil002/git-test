@@ -4,7 +4,7 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    window.location.href = `https://samzra.onrender.com/signin/${encodedEmail}`;
+    window.location.href = `https://samzra.onrender.com/signIn/${encodedEmail}`;
   };
 
   return (
